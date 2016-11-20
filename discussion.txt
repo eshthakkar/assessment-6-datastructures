@@ -1,0 +1,57 @@
+Runtime
+
+1. To find if the box of animal crackers contains an elephant, it would take us O(n) runtime.
+Thats the pessimistic view considering it has n crackers and we don't find an elephant inspite of searching all n crackers.
+
+2. Runtimes in descending order(Fastest to slowest):
+
+O(1)
+O(log n)
+O(n)
+O(n log n)
+O(n^2)
+O(2^n)
+
+Stacks and Queues
+
+1.
+    1. To load and unload pallets onto a flatbed truck, a stack should be used. As you would stack the pallets on top of each other and while unloading , start with the topmost pallet. LIFO.
+
+    2. An assembly line is a queue, where a bottle in queue first, comes out first to be capped. FIFO. 
+
+    3. To calculate the mathematical expression, we can use the stack to calculate the multiplication and division first and then use their result to evaluate addition and subtraction. So LIFO.
+
+2. - A flight ticket booking system is a queue where you are served on a first come first basis. 
+   - Events in a game are addressed using a queue. 
+
+3. - Reversing a word can be done using a stack. Where you want the last character to be the first in your reversed word. 
+  - Git revert must have been implemented using a stack where you can go back to your last commit. The most recent one. LIFO.
+
+Linked Lists
+
+1. Nodes are made up of both the text box and next box. Data for each node is the text.
+  The Head points to the node containing the text "Apple". in this linked list, there is no tail.
+
+  Otherwise there is a tail pointer which points to the last node in the list, the node which has next as None - node with text "Cherry"
+
+2. Singly linked lists have just a next which points to the next node in the list.
+Doubly linked lists on the other hand have a prev too which points to the previous node in the list along with the next pointing to the next node in the list.
+
+In singly linked list , you can just traverse in 1 direction from head to tail. In case of doubly linked lists , you can traverse in both directions.
+
+3. If we don't know the tail of the linked list, in order to add a node to the end, we will have to traverse the whole list first to reach the end of the list, and then append there. This would take us O(n) time. But when we know the tail as an attribute, we can directly append after it. The runtime would be just O(1). We won't have to traverse the whole list to reach the end to find the end of the list.
+
+Trees
+
+1. Order of nodes visited in BFS to find burrito - [ food, Italian, Indian, Mexican, lasagna, pizza, tikka masala, saag, burrito ]
+
+2. Order of nodes visited in DFS to find Chicago-style - [food, Mexican, enchiladas, tacos, burrito, Indian, saag, tikka masala, Italian, pizza, Sicilian, New York-style , Chicago-style ]
+
+3. Binary search tree is a tree where each node has at the most 2 children. Also it has a rule for arrangement.The left child is less in value than the parent node and right child is always more in value than the parent node. This arrangement makes the tree extremely efficient for searching.
+For n nodes, the runtime for searching becomes O(log n) for a binary search tree as compared to a binary tree whose runtime is O(n).
+
+
+
+
+    
+
